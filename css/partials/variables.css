@@ -1,0 +1,28 @@
+:root {
+  --background-color: #cecbaf;
+  --background-color2: #505943;
+  --background-color3: #fc6161;
+  --text-color: #cecbaf;
+  --text-color2: #fc6161;
+  --text-color3: #505943;
+  --text-color4: white;
+}
+
+main {
+  background: var(--background-color);
+}
+footer {
+  background: var(--background-color2);
+}
+h1 {
+  color: var(--text-color2);
+}
+h2 {
+  color: var(--text-color);
+}
+h3 {
+  color: var(--text-color3);
+}
+h4 {
+  color: var(--text-color4);
+}
