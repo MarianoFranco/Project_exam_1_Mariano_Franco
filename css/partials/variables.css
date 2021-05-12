@@ -26,3 +26,6 @@ h3 {
 h4 {
   color: var(--text-color4);
 }
+p {
+  color: var(--text-color4);
+}

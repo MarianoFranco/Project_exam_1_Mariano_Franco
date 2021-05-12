@@ -28,6 +28,28 @@ header {
 }
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 75% auto;
+  grid-template-areas:
+    "portrait portrait"
+    "latest latest"
+    "top about"
+    "destinations destinations";
+}
+.portrait {
+  grid-area: portrait;
+}
+.latest-post {
+  grid-area: latest;
+}
+.top-destinations {
+  grid-area: top;
+}
+.about {
+  grid-area: about;
+}
+.destinations-countries {
+  grid-area: destinations;
 }
 footer {
   grid-area: footer;
@@ -46,4 +68,7 @@ h4 {
   font-size: 2.4rem;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
+}
+p {
+  font-size: 1.8rem;
 }

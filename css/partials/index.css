@@ -31,13 +31,11 @@
   font-weight: normal;
 }
 .latest-post {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .latest-post__roulette {
   display: flex;
-  width: 1370px;
-  height: 300px;
   margin: auto;
   justify-content: center;
 }
@@ -105,8 +103,8 @@
   width: 950px;
 }
 .top-destinations {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 .top-destinations__main {
   height: 439px;
@@ -114,6 +112,7 @@
   border: solid 1px #505943;
   position: relative;
   border-radius: 10px 0 10px 0;
+  margin: auto;
 }
 .top-destinations__img {
   width: 100%;
@@ -124,12 +123,58 @@
 }
 .top-destinations__overlay {
   height: 169px;
-  width: 899px;
+  width: 100%;
   top: 270px;
   background: black;
   position: absolute;
   opacity: 0.8;
   border-radius: 0 0 10px 0;
 }
-.info__container--destination {
+.top-destinations__title {
+  padding: 20px 20px 10px;
+  color: #cecbaf;
+  font-weight: bold;
+}
+.top-destinations__title--main {
+  width: 60%;
+}
+.top-destinations__text {
+  color: white;
+  font-weight: lighter;
+  padding: 10px 20px;
+}
+.info__container--mainDestination {
+  left: 120px;
+  top: 130px;
+}
+
+.top-destinations__countryName {
+  background-color: #fc6161;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 15px;
+  font-family: "Love Ya Like A Sister", cursive;
+}
+.top-destinations__secondary {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto 0;
+}
+.top-destinations__cover {
+  width: 410px;
+  height: 300px;
+  position: relative;
+}
+.top-destinations__overlay--secondary {
+  top: 130px;
+}
+.info__container--secDestination {
+  top: 140px;
+  left: 116px;
+}
+.about {
+  width: 336px;
+  margin: 50px 0 0;
+  border: solid 1px black;
 }
