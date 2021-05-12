@@ -53,6 +53,23 @@ main {
 }
 footer {
   grid-area: footer;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas:
+    "logo links social"
+    "rights rights rights";
+}
+.logo {
+  grid-area: logo;
+}
+.links {
+  grid-area: links;
+}
+.social {
+  grid-area: social;
+}
+.rights {
+  grid-area: rights;
 }
 h1 {
   font-size: 6rem;

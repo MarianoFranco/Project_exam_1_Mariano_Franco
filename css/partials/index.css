@@ -100,7 +100,6 @@
   background: black;
   height: 1px;
   margin-top: 50px;
-  width: 950px;
 }
 .top-destinations {
   width: 90%;
@@ -199,15 +198,38 @@
   width: 90%;
   margin: auto;
 }
+.destinations-countries__cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 .destinations-countries__card {
   width: 410px;
   height: 300px;
   position: relative;
   border-radius: 10px 0 10px 0;
 }
+.destinations-countries__overlay {
+  content: "";
+  width: 410px;
+  height: 300px;
+  position: absolute;
+  background: black;
+  border-radius: 10px 0 10px 0;
+  opacity: 0.8;
+}
 .destinations-countries__img {
   width: 100%;
   border-radius: 10px 0 10px 0;
   object-fit: cover;
   object-position: center center;
+}
+.destinations-countries__title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Love Ya Like A Sister", cursive;
 }

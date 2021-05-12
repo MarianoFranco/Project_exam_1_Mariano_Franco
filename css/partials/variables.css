@@ -11,9 +11,7 @@
 main {
   background: var(--background-color);
 }
-footer {
-  background: var(--background-color2);
-}
+
 h1 {
   color: var(--text-color2);
 }

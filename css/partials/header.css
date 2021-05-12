@@ -10,6 +10,8 @@ header {
   align-self: center;
   position: relative;
   left: 20px;
+  width: 182px;
+  height: 81px;
 }
 .logo--title {
   font-size: 5.2rem;
