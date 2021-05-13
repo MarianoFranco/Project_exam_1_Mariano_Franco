@@ -42,7 +42,6 @@ main {
 }
 .last-post {
   grid-area: last-post;
-  border: solid 1px black;
 }
 .post__card--main {
   max-width: 1196px;
@@ -55,7 +54,7 @@ main {
 }
 .post__img {
   width: 100%;
-  height: 508px;
+  max-height: 508px;
   object-fit: cover;
   object-position: center center;
   border-radius: 10px 0 10px 0;
@@ -114,4 +113,27 @@ main {
 }
 .all-post {
   grid-area: all-post;
+}
+.post_cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.post__card--mini {
+  width: 485px;
+  height: 610px;
+
+  margin: 20px;
+  background: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 10px 0 10px 0;
+  position: relative;
+}
+.post__tags--mini {
+  top: 217px;
+}
+.post__title--mini,
+.post__desc--mini,
+.post__readMore--mini {
+  padding: 10px 20px;
 }
