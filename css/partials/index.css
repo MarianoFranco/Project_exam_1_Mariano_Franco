@@ -233,3 +233,10 @@
   font-size: 3.6rem;
   font-family: "Love Ya Like A Sister", cursive;
 }
+
+/* Tablet */
+@media (max-width: 991px) {
+}
+/* Mobile version */
+@media (max-width: 767px) {
+}
