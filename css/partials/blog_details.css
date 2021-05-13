@@ -1,0 +1,161 @@
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "portrait"
+    "info"
+    "experience"
+    "gallery"
+    "reply"
+    "comments";
+}
+.portrait {
+  grid-area: portrait;
+  background: url("../../img/iguazu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 752px;
+  position: relative;
+}
+
+.portrait::before {
+  content: "";
+  background-color: black;
+  width: 100%;
+  height: 752px;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.portrait__title {
+  position: absolute;
+  top: 195px;
+  left: 161px;
+  width: 540px;
+  font-family: "Love Ya Like A Sister";
+}
+.portrait__h2 {
+  position: absolute;
+  top: 385px;
+  left: 161px;
+  width: 540px;
+  font-weight: normal;
+}
+.portrait__img {
+  max-width: 582px;
+  max-height: 425px;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 250px;
+  left: 750px;
+  border: solid 1px #fc6161;
+  border-radius: 10px 0 10px 0;
+}
+.info {
+  grid-area: info;
+}
+.info__desc {
+  width: 90%;
+  margin: auto;
+}
+.info__p {
+  color: black;
+  margin: 20px;
+}
+.info__location {
+  text-align: end;
+  width: 80%;
+  margin: 20px auto;
+}
+.info__icon {
+  font-size: 2.4rem;
+  color: #fc6161;
+}
+.info__span {
+  font-size: 2.4rem;
+  margin-left: 10px;
+}
+.line {
+  background: black;
+  height: 1px;
+  width: 90%;
+  margin: 20px auto;
+}
+.myExperience {
+  grid-area: experience;
+}
+.myExperience__cover {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+.myExperience__img {
+  height: 340px;
+  width: 543px;
+  padding: 50px;
+}
+.myExperience__allWeeks {
+  padding: 20px;
+}
+.myExperience__week {
+  margin: 15px;
+}
+.myExperience__weekTitle {
+  margin: 10px 0;
+  color: black;
+}
+.myExperience__p {
+  color: black;
+}
+.myExperience__conclusion {
+  width: 80%;
+  margin: 20px auto;
+}
+.gallery {
+  grid-area: gallery;
+}
+.gallery__p {
+  width: 90%;
+  margin: 0 70px 20px;
+  color: black;
+}
+.gallery__cover {
+  display: grid;
+  grid-template-areas:
+    "photo1 photo2 photo3"
+    "photo1 photo4 photo4";
+  grid-gap: 2rem;
+  width: 80%;
+
+  margin: 50px auto;
+}
+.photo1 {
+  grid-area: photo1;
+}
+.photo2 {
+  grid-area: photo2;
+  max-height: 317px;
+}
+.photo3 {
+  grid-area: photo3;
+  max-height: 317px;
+}
+.photo4 {
+  grid-area: photo4;
+  max-height: 289px;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.reply {
+  grid-area: reply;
+}
+.comments {
+  grid-area: comments;
+}
