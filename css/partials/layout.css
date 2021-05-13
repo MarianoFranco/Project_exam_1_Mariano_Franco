@@ -26,31 +26,7 @@ header {
   grid-area: header;
   height: 110px;
 }
-main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 75% auto;
-  grid-template-areas:
-    "portrait portrait"
-    "latest latest"
-    "top about"
-    "destinations destinations";
-}
-.portrait {
-  grid-area: portrait;
-}
-.latest-post {
-  grid-area: latest;
-}
-.top-destinations {
-  grid-area: top;
-}
-.about {
-  grid-area: about;
-}
-.destinations-countries {
-  grid-area: destinations;
-}
+
 footer {
   grid-area: footer;
   display: grid;
