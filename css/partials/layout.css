@@ -67,6 +67,22 @@ p {
 }
 
 @media (max-width: 991px) {
+  body {
+    max-width: 991px;
+  }
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "portrait"
+      "latest"
+      "top"
+      "about"
+      "destinations";
+  }
+}
+@media (max-width: 767px) {
   main {
     grid-area: main;
     display: grid;

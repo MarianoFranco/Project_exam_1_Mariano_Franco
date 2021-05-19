@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -58,10 +59,20 @@ header {
   background: white;
   margin-top: 5px;
 }
+.nav__conatiner {
+  position: relative;
+  border: solid 1px white;
+}
+.menu__icon {
+  display: none;
+}
+.menu__checkbox {
+  display: none;
+}
+
 nav {
   align-self: center;
   position: relative;
-  right: 20px;
 }
 .nav__ul {
   display: flex;
@@ -77,17 +88,67 @@ nav {
   color: white;
 }
 @media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .logo {
+    padding: 10px;
+    align-self: center;
+    position: relative;
+    left: 5px;
+    width: 182px;
+    height: 81px;
+  }
+  .searchBar {
+    align-self: center;
+    position: relative;
+    left: 0px;
+  }
+  .nav__container {
+    position: relative;
+    right: 20px;
+  }
+  .menu__icon {
+    color: white;
+    display: block;
+    font-size: 4rem;
+    top: 0;
+    left: 700px;
+  }
+  .menu__checkbox:checked ~ nav {
+    display: block;
+  }
   nav {
-    right: 10px;
+    display: none;
+  }
+  .nav__ul {
+    border: solid 1px red;
+    position: fixed;
+    width: 264px;
+    height: 250px;
+    left: 500px;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px 0 10px 0;
   }
   .nav__li {
     min-width: 100px;
     list-style: none;
     text-align: center;
+    margin: 15px 0;
   }
-  .searchBar {
-    align-self: center;
+  .nav__close {
+    color: white;
+    font-size: 2.4rem;
+    /* align-self: flex-end; */
+    /* text-align: end; */
+    justify-self: center;
+    margin: auto;
+    padding: 8px;
     position: relative;
-    left: 50px;
+    /* right: 0; */
+    left: 219px;
   }
 }
