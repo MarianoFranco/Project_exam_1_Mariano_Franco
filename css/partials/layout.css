@@ -65,3 +65,17 @@ h4 {
 p {
   font-size: 1.8rem;
 }
+
+@media (max-width: 991px) {
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "portrait"
+      "latest"
+      "top"
+      "about"
+      "destinations";
+  }
+}

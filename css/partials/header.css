@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   position: absolute;
   z-index: 100;
-  width: 1440px;
+  width: 100%;
 }
 .logo {
   padding: 10px;
@@ -75,4 +75,19 @@ nav {
   text-decoration: none;
   font-size: 2rem;
   color: white;
+}
+@media (max-width: 991px) {
+  nav {
+    right: 10px;
+  }
+  .nav__li {
+    min-width: 100px;
+    list-style: none;
+    text-align: center;
+  }
+  .searchBar {
+    align-self: center;
+    position: relative;
+    left: 50px;
+  }
 }

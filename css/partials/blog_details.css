@@ -129,7 +129,6 @@ main {
     "photo1 photo4 photo4";
   grid-gap: 2rem;
   width: 80%;
-
   margin: 50px auto;
 }
 .photo1 {
@@ -156,6 +155,73 @@ main {
 .reply {
   grid-area: reply;
 }
+.reply__cover {
+  width: 80%;
+  margin: 20px auto;
+}
+.reply__textCover {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.reply__label {
+  font-size: 2.4rem;
+  color: #505943;
+}
+.reply__textbox--textarea {
+  height: 236px;
+}
+.reply__textbox {
+  margin: 10px 0;
+  min-height: 30px;
+  border-radius: 10px;
+  border: solid 1px #505943;
+}
+.reply__cover--submit {
+  max-width: 220px;
+}
+.reply__submit {
+  border-radius: 50px;
+  border: none;
+  background-color: #fc6161;
+  font-size: 2.4rem;
+  padding: 10px 20px;
+  color: white;
+}
 .comments {
   grid-area: comments;
+}
+.comments__cover {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: solid 2px #fc6161;
+  border-radius: 10px;
+}
+.comments__imgBox {
+  width: 30%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  color: #fc6161;
+}
+.comments__icon {
+  font-size: 90px;
+}
+.comments__name {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #fc6161;
+  margin: 5px 0;
+}
+.comments__dataPost {
+  font-size: 1.6rem;
+  color: black;
+}
+.comments__text {
+  margin: 21px 0;
+  color: black;
+  font-size: 2.2rem;
 }
