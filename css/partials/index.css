@@ -340,6 +340,17 @@ main {
     width: 100%;
     margin: 0 auto;
   }
+  .top-destinations__secondary {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .top-destinations__cover {
+    width: 410px;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+  }
   .about {
     width: 90%;
     margin: 50px auto 0;
