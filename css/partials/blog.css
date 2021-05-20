@@ -59,6 +59,9 @@ main {
   object-position: center center;
   border-radius: 10px 0 10px 0;
 }
+.post__img--mini {
+  max-height: 273px;
+}
 .post__tags {
   position: absolute;
   top: 434px;

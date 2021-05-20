@@ -12,27 +12,32 @@
 </head>
 <body>
 	<header>
-	   <div class="logo">
-		   <p class="logo--title">NOMADA</p>
-		   <p class="logo--sub">discover the world</p>
-	   </div>
-	   <div class="searchBar">
-			<form action="#" class="searchBar__form">
-				<div class="searchBar__dataContainer">
-					<input type="text"   class="searchBar__input" name="searchbar" placeholder="Search..." />
-					<button class="searchBar__btn" id="search"><i class="fas fa-search searchBar__icon"></i></button>					
-				</div>
-				<div class="searchBar__line"></div>
-			</form>
+		<div class="logo">
+			<p class="logo--title">NOMADA</p>
+			<p class="logo--sub">discover the world</p>
 		</div>
-	   	<nav>
-		   	<ul class="nav__ul">
-			   	<li class="nav__li"><a href="#" class="nav__link">Home</a></li>
-			   	<li class="nav__li"><a href="#" class="nav__link">Blog</a></li>
-			   	<li class="nav__li"><a href="#" class="nav__link">Contact</a></li>
-		   	</ul>
-	 	</nav>
-	</header>
+		<div class="searchBar">
+			 <form action="#" class="searchBar__form">
+				 <div class="searchBar__dataContainer">
+					 <input type="text"   class="searchBar__input" name="searchbar" placeholder="Search..." />
+					 <button class="searchBar__btn" id="search"><i class="fas fa-search searchBar__icon"></i></button>					
+				 </div>
+				 <div class="searchBar__line"></div>
+			 </form>
+		 </div>
+		 <div class="nav__container">
+			 <label for="menu__icon" class="menu__icon"><i class="fas fa-bars"></i></label>
+			 <input type="checkbox" class="menu__checkbox" id="menu__icon">
+			 <nav>
+				 <ul class="nav__ul">
+					 <li><i class="fas fa-times nav__close"></i></li>
+					 <li class="nav__li"><a href="index.html" class="nav__link">Home</a></li>
+					 <li class="nav__li"><a href="blog.html" class="nav__link">Blog</a></li>
+					 <li class="nav__li"><a href="contact.html" class="nav__link">Contact</a></li>
+				 </ul>
+			 </nav>
+		 </div>		
+	 </header>
 	<main>
 		<section class="portrait">
 			<div class="portrait__shadow"></div>
@@ -40,7 +45,7 @@
 			<h2 class="portrait__h2">Get to know all my favourites places! Here I will be posting all my trips so you don't miss anything!</h2>
 		</section>
 		<section class="last-post">
-			<h3 class="last-post__title">Last post</h3>
+			<!-- <h3 class="last-post__title">Last post</h3>
 			<article class="post__card--main">
 				<img src="img/iguazu.jpg" alt="" class="post__img">
 				<div class="post__tags">
@@ -57,12 +62,12 @@
 					<span class="info__comments">200 comments</span>	
 				</div>
 			</article>
-			<div class="line"></div>
+			<div class="line"></div> -->
 		</section>
 		<section class="all-post">
 			<h3 class="last-post__title">All post</h3>
 			<div class="post_cardsContainer">
-				<article class="post__card--mini">
+				<!-- <article class="post__card--mini">
 					<img src="img/iguazu.jpg" alt="" class="post__img">
 					<div class="post__tags post__tags--mini">
 						<h4 class="post__tag">Argentina</h4>
@@ -126,7 +131,7 @@
 						<span class="info__comments">200 comments</span>	
 					</div>
 				</article>
-				
+				 -->
 			</div>          
 		</section>
 	</main>
@@ -176,5 +181,6 @@
 			<p>Pictures are for personal and non commercial use.</p>
 		</div>
 	</footer>
+	<script src="js/blog.js"></script>
 </body>
 </html>

@@ -12,35 +12,40 @@
 </head>
 <body>
 	<header>
-	   <div class="logo">
-		   <p class="logo--title">NOMADA</p>
-		   <p class="logo--sub">discover the world</p>
-	   </div>
-	   <div class="searchBar">
-			<form action="#" class="searchBar__form">
-				<div class="searchBar__dataContainer">
-					<input type="text"   class="searchBar__input" name="searchbar" placeholder="Search..." />
-					<button class="searchBar__btn" id="search"><i class="fas fa-search searchBar__icon"></i></button>					
-				</div>
-				<div class="searchBar__line"></div>
-			</form>
+		<div class="logo">
+			<p class="logo--title">NOMADA</p>
+			<p class="logo--sub">discover the world</p>
 		</div>
-	   	<nav>
-		   	<ul class="nav__ul">
-			   	<li class="nav__li"><a href="#" class="nav__link">Home</a></li>
-			   	<li class="nav__li"><a href="#" class="nav__link">Blog</a></li>
-			   	<li class="nav__li"><a href="#" class="nav__link">Contact</a></li>
-		   	</ul>
-	 	</nav>
-	</header>
+		<div class="searchBar">
+			 <form action="#" class="searchBar__form">
+				 <div class="searchBar__dataContainer">
+					 <input type="text"   class="searchBar__input" name="searchbar" placeholder="Search..." />
+					 <button class="searchBar__btn" id="search"><i class="fas fa-search searchBar__icon"></i></button>					
+				 </div>
+				 <div class="searchBar__line"></div>
+			 </form>
+		 </div>
+		 <div class="nav__container">
+			 <label for="menu__icon" class="menu__icon"><i class="fas fa-bars"></i></label>
+			 <input type="checkbox" class="menu__checkbox" id="menu__icon">
+			 <nav>
+				 <ul class="nav__ul">
+					 <li><i class="fas fa-times nav__close"></i></li>
+					 <li class="nav__li"><a href="index.html" class="nav__link">Home</a></li>
+					 <li class="nav__li"><a href="blog.html" class="nav__link">Blog</a></li>
+					 <li class="nav__li"><a href="contact.html" class="nav__link">Contact</a></li>
+				 </ul>
+			 </nav>
+		 </div>		
+	 </header>
 	<main>
-		<section class="portrait">
+		<!-- <section class="portrait">
 			<div class="portrait__overlay"></div>
 			<h1 class="portrait__title">Argentina, <br>Iguazú</h1>
 			<h2 class="portrait__h2">The Iguazu Falls is one of the most visited natural attractions in South America. Today I want to give you my recommendations to organize your trip to the Iguazu Falls on the Argentine side.</h2>
 			<img src="img/iguazu.jpg" alt="cataratas" class="portrait__img">
-		</section>
-		<section class="info">
+		</section> -->
+		<!-- <section class="info">
 			<h3 class="info__title">Waterfalls, vegetation and a lot of heat!</h3>
 			<div class="info__desc">
 				<p class="info__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui aliquam potenti et in euismod. Sapien, felis ut tortor non. Non sed tincidunt id consequat senectus tellus, sed. Tempus maecenas velit, vitae magna aliquam donec in suspendisse. Rhoncus, arcu nulla cum pellentesque nisl, rutrum tincidunt malesuada. Odio risus varius aliquam eros quam adipiscing lobortis suspendisse. Et rhoncus eget placerat sit eget. Viverra sed pharetra eget cursus diam nisl pharetra donec orci. Suspendisse vitae sed nulla bibendum in pharetra, maecenas. Platea nulla neque sed sed dignissim ridiculus.</p>
@@ -96,7 +101,7 @@
 				</div>
 			</div>
 			<div class="line"></div>
-		</section>
+		</section> --> -->
 		<section class="reply">
 			<h3 class="reply__title">Leave a reply</h3>
 			<div class="reply__cover">
@@ -190,5 +195,7 @@
 			<p>Pictures are for personal and non commercial use.</p>
 		</div>
 	</footer>
+	<!-- <script src="js/components/alert.js"></script> -->
+	<script src="js/blog_details.js"></script>
 </body>
 </html>

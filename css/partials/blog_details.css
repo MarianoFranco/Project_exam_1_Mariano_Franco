@@ -11,7 +11,7 @@ main {
 }
 .portrait {
   grid-area: portrait;
-  background: url("../../img/iguazu.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
