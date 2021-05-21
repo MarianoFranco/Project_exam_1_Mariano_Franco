@@ -91,6 +91,7 @@ main {
   position: relative;
   border-radius: 10px 0 10px 0;
 }
+
 .latest-post--img {
   width: 100%;
   height: 100%;
@@ -98,6 +99,7 @@ main {
   object-position: center center;
   border-radius: 10px 0 10px 0;
 }
+
 .latest-post__overlay {
   background: black;
   width: 100%;
@@ -107,6 +109,10 @@ main {
   left: 0;
   opacity: 0.6;
   border-radius: 10px 0 10px 0;
+}
+.latest-post__overlay:hover {
+  opacity: 0.3;
+  transition: 0.3s;
 }
 .latest-post__title {
   position: absolute;

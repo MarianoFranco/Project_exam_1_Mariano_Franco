@@ -51,6 +51,7 @@ async function getDestinations() {
 		
 				ruleteContainer.innerHTML += `
 				<div class="latest-post__card">
+				<a href="blog_details.html?id=${element.id}" class="latest-post__link">
 					<img src="${element.better_featured_image.source_url}" alt="Mardel IMg" class="latest-post--img" />
 					<div class="latest-post__overlay"></div>
 					<h4 class="latest-post__title">${element.title.rendered}</h4>
@@ -59,6 +60,7 @@ async function getDestinations() {
 						<span class="info__line">|</span>
 						<span class="info__comments">200 comments</span>			
 					</div>
+					</a>
 				</div>
 				`;
 			
@@ -66,6 +68,7 @@ async function getDestinations() {
 	   
 		carrusel();
 	   
+	
 		//top-Destinations
 
 		const topMainDestinations = document.querySelector('.top-destinations__main');
@@ -111,18 +114,7 @@ async function getDestinations() {
 			
 		}
 
-		const destinationCountries = document.querySelector('.destinations-countries__cardsContainer');
-
-		for(let i=0; i< 3; i++){
-
-			destinationCountries.innerHTML +=`
-			<div class="destinations-countries__card">
-				<div class="destinations-countries__overlay"></div>
-				<img src="img/country1.jpg" alt="img of the country" class="destinations-countries__img"/>
-				<h4 class="destinations-countries__title">Argentina</h4>
-			</div>
-			`;
-		}
+	
 		
 	
 	}catch(error){
