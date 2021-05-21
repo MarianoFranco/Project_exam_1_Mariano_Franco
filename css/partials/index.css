@@ -59,11 +59,20 @@ main {
   margin: auto;
 }
 .latest-post__roulette {
-  display: flex;
-  justify-content: center;
-  position: relative;
+  width: 1300px;
+  margin: auto;
 }
-
+.latest-post__back,
+.latest-post__next {
+  position: absolute;
+  z-index: 10;
+}
+.latest-post__back {
+  left: -20px;
+}
+.latest-post__next {
+  right: -20px;
+}
 .arrow {
   width: 40px;
   height: 40px;
@@ -74,15 +83,7 @@ main {
   border-radius: 50px;
   align-self: center;
 }
-.arrow--left {
-  position: absolute;
-  left: -20px;
-  z-index: 10;
-}
-.arrow--right {
-  position: absolute;
-  left: 1275px;
-}
+
 .latest-post__card {
   height: 300px;
   width: 300px;
@@ -91,18 +92,19 @@ main {
   border-radius: 10px 0 10px 0;
 }
 .latest-post--img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
   border-radius: 10px 0 10px 0;
 }
 .latest-post__overlay {
   background: black;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   opacity: 0.6;
   border-radius: 10px 0 10px 0;
 }
@@ -111,6 +113,8 @@ main {
   top: 45%;
   left: 50%;
   transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
 }
 .info__container {
   position: absolute;
@@ -321,12 +325,10 @@ main {
     width: 100%;
     margin: auto;
   }
-  /* .latest-post__roulette {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 90%;
-  } */
+  .latest-post__roulette {
+    width: 870px;
+    margin: auto;
+  }
   .arrow--left {
     position: absolute;
     left: 20px;
@@ -380,6 +382,10 @@ main {
     left: 35px;
     width: 540px;
     font-weight: normal;
+  }
+  .latest-post__roulette {
+    width: 650px;
+    margin: auto;
   }
   .top-destinations__main {
     height: 439px;
