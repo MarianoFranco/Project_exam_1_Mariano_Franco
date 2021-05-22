@@ -78,17 +78,21 @@ async function getDestinations() {
 		for(let i=0; i<1; i++){			
 			
 			topMainDestinations.innerHTML += `
-				<img src="${jsonResults[i].better_featured_image.source_url}" alt="${jsonResults[i].better_featured_image.alt_text}" class="top-destinations__img" />
-				<div class="top-destinations__overlay">
-					<h4 class="top-destinations__title top-destinations__title--main">Everything you need to know about ${jsonResults[i].tags[0]}!</h4>
-					<p class="top-destinations__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vitae quaerat delectus dolorum beatae veritatis. </p>
-					<div class="info__container info__container--mainDestination">
-						<span class="info__day">2 days ago</span>
-						<span class="info__line">|</span>
-						<span class="info__comments">200 comments</span>			
+			<div class="top-destinations__mainCover">
+				<a href="blog_details.html?id=${jsonResults[i].id}" 	class="top-destinations__link">
+					<img src="${jsonResults[i].better_featured_image.source_url}" alt="$	{jsonResults[i].better_featured_image.alt_text}" 	class="top-destinations__img" />
+					<div class="top-destinations__overlay">
+						<h4 class="top-destinations__title 	top-destinations__title--main">Everything you need to know about 	${jsonResults[i].tags[0]}!</h4>
+						<p class="top-destinations__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vitae quaerat delectus 	dolorum beatae veritatis. </p>
+						<div class="info__container info__container--mainDestination">
+							<span class="info__day">2 days ago</span>
+							<span class="info__line">|</span>
+							<span class="info__comments">200 comments</span>			
+						</div>
 					</div>
-				</div>
-				<h4 class="top-destinations__countryName">${jsonResults[i].title.rendered}</h4>
+					<h4 class="top-destinations__countryName">${jsonResults[i].title.	rendered}</h4>
+				</a>
+			</div>	
 		`;			
 			
 		}
@@ -98,6 +102,7 @@ async function getDestinations() {
 			
 			topRestDestinations.innerHTML += `
 			<div class="top-destinations__cover">
+				<a href="blog_details.html?id=${jsonResults[i].id}" class="top-destinations__link">
 					<img src="${jsonResults[i].better_featured_image.source_url}" alt="${jsonResults[i].better_featured_image.alt_text}" class="top-destinations__img" />
 					<div class="top-destinations__overlay top-destinations__overlay--secondary">
 						<h4 class="top-destinations__title">${jsonResults[i].tags[0]}</h4>
@@ -110,7 +115,8 @@ async function getDestinations() {
 						
 					</div>
 					<h4 class="top-destinations__countryName">${jsonResults[i].title.rendered}</h4>
-				</div>
+				</a>
+			</div>
 		`;			
 			
 		}

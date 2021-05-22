@@ -149,6 +149,9 @@ main {
   margin: 0 auto;
 }
 .top-destinations__main {
+  margin: auto;
+}
+.top-destinations__mainCover {
   height: 439px;
   width: 899px;
   border: solid 1px #505943;
@@ -163,6 +166,11 @@ main {
   object-position: center center;
   border-radius: 10px 0 10px 0;
 }
+.top-destinations__mainCover:hover,
+.top-destinations__cover:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
 .top-destinations__overlay {
   height: 169px;
   width: 100%;
@@ -172,6 +180,7 @@ main {
   opacity: 0.8;
   border-radius: 0 0 10px 0;
 }
+
 .top-destinations__title {
   padding: 20px 20px 10px;
   color: #cecbaf;
@@ -277,7 +286,10 @@ main {
   font-size: 3.6rem;
   font-family: "Love Ya Like A Sister", cursive;
 }
-
+.destinations-countries__title:hover {
+  color: #fc6161;
+  transition: all 0.4s ease;
+}
 /* Tablet */
 @media (max-width: 991px) {
   main {
@@ -394,12 +406,14 @@ main {
     margin: auto;
   }
   .top-destinations__main {
+    margin: 20px;
+  }
+  .top-destinations__mainCover {
     height: 439px;
     width: 95%;
     border: solid 1px #505943;
     position: relative;
     border-radius: 10px 0 10px 0;
-    margin: auto;
   }
   .top-destinations__secondary {
     display: flex;

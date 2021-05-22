@@ -38,7 +38,7 @@ header {
 }
 .searchBar__input {
   border: none;
-  width: 100px;
+  max-width: 180px;
   font-size: 2rem;
   background: none;
 }
@@ -52,12 +52,19 @@ header {
   width: 30px;
   font-size: 30px;
 }
-
+.searchBar__icon:hover {
+  color: #fc6161;
+  transition: all 0.4s ease;
+}
 .searchBar__line {
   height: 2px;
   width: 235px;
   background: white;
   margin-top: 5px;
+}
+.searchBar__line:hover {
+  background: #fc6161;
+  transition: all 0.4s ease;
 }
 .nav__conatiner {
   position: relative;
@@ -77,16 +84,36 @@ nav {
 .nav__ul {
   display: flex;
 }
+.nav__close {
+  display: none;
+}
 .nav__li {
   min-width: 150px;
   list-style: none;
   text-align: center;
 }
+
 .nav__link {
   text-decoration: none;
   font-size: 2rem;
   color: white;
 }
+.nav__link:hover {
+  color: #cecbaf;
+}
+.active {
+  position: relative;
+  color: #fc6161;
+}
+.active::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  top: 25px;
+  background: #fc6161;
+  position: absolute;
+}
+
 @media (max-width: 991px) {
 }
 
@@ -115,18 +142,19 @@ nav {
     top: 0;
     left: 700px;
   }
-  .menu__checkbox:checked ~ nav {
+  /* .menu__checkbox:checked ~ nav {
     display: block;
-  }
-  nav {
+  } */
+
+  /* nav {
     display: none;
-  }
+  } */
   .nav__ul {
-    border: solid 1px red;
+    border: solid 2px #fc6161;
     position: fixed;
     width: 264px;
     height: 250px;
-    left: 500px;
+    left: 498px;
     top: 90px;
     display: flex;
     flex-direction: column;
@@ -138,17 +166,27 @@ nav {
     list-style: none;
     text-align: center;
     margin: 15px 0;
+    position: relative;
+    top: 60px;
   }
   .nav__close {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 3.3rem;
+    background: none;
+    border: none;
     color: white;
-    font-size: 2.4rem;
-    /* align-self: flex-end; */
-    /* text-align: end; */
-    justify-self: center;
-    margin: auto;
-    padding: 8px;
-    position: relative;
-    /* right: 0; */
-    left: 219px;
+    position: absolute;
+    left: 213px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .nav__closeIcon {
+    text-align: center;
   }
 }
