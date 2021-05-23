@@ -15,7 +15,7 @@ function carrusel(){
 				infinite: true,
 				dots: true
 			  }
-			},
+			},		
 			{
 			  breakpoint: 991,
 			  settings: {

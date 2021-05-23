@@ -153,7 +153,7 @@ main {
 }
 .top-destinations__mainCover {
   height: 439px;
-  width: 899px;
+  max-width: 899px;
   border: solid 1px #505943;
   position: relative;
   border-radius: 10px 0 10px 0;
@@ -216,6 +216,7 @@ main {
   width: 410px;
   height: 300px;
   position: relative;
+  margin: 10px;
 }
 .top-destinations__overlay--secondary {
   top: 130px;
@@ -225,8 +226,8 @@ main {
   left: 116px;
 }
 .about {
-  width: 336px;
-  margin: 50px 0 0;
+  max-width: 336px;
+  margin: 50px 5px 0;
   border: solid 1px black;
 }
 .about__title {
@@ -289,6 +290,13 @@ main {
 .destinations-countries__title:hover {
   color: #fc6161;
   transition: all 0.4s ease;
+}
+@media (max-width: 1200px) {
+  /*Desktop*/
+
+  .latest-post__roulette {
+    width: 1100px;
+  }
 }
 /* Tablet */
 @media (max-width: 991px) {
@@ -372,7 +380,7 @@ main {
     margin: 20px;
   }
   .about {
-    width: 90%;
+    max-width: 90%;
     margin: 50px auto 0;
     border: solid 1px black;
   }
