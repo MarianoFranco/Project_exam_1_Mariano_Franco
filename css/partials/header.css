@@ -131,6 +131,12 @@ nav {
     position: relative;
     left: 0px;
   }
+  .searchBar__input {
+    border: none;
+    max-width: 140px;
+    font-size: 2rem;
+    background: none;
+  }
   .nav__container {
     position: relative;
     right: 20px;
