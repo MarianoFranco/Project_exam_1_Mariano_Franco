@@ -40,7 +40,7 @@ function carrusel(){
 };
 
 const main = document.querySelector('main');
-const ruleteContainer=    document.querySelector('.latest-post__roulette');
+const ruleteContainer= document.querySelector('.latest-post__roulette');
 
 async function getDestinations() {
 	try{
@@ -97,7 +97,7 @@ async function getDestinations() {
 			let tags = jsonResults[i].tags;
 			let country = '';
 			let city='';
-			// console.log(tags[0]);
+			//  console.log(tags[0]);
 			// console.log(tags[1]);
 			
 			for(let j = 0; j < tags.length; j++){
@@ -146,6 +146,7 @@ async function getDestinations() {
 				}
 			}
 			
+
 			topMainDestinations.innerHTML += `
 			<div class="top-destinations__mainCover">
 				<a href="blog_details.html?id=${jsonResults[i].id}" 	class="top-destinations__link">
