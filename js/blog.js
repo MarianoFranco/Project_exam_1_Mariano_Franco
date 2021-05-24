@@ -12,43 +12,69 @@ async function getDestinations() {
 
 		for(let i=0; i < 1; i++){
 			let tags = jsonResults[i].tags;
+			let country = '';
+			let city='';
+			// console.log(tags[0]);
+			// console.log(tags[1]);
 			
-			if(tags[0] === 10){
-				nameTag = 'Spain';
-			}			
-			else if(tags[0] === 12){
-				nameTag = 'Argentina';
+			for(let j = 0; j < tags.length; j++){
+				console.log(tags[j])
+				if(tags[j] === 8 || tags[j] === 20 || tags[j]=== 12){
+					console.log("es pais")
+					if(tags[j]=== 8){
+						country = 'Spain';
+					}
+					else if(tags[j]=== 20){
+						country = 'Norway';
+					}
+					else{
+						country = 'Argentina';
+					}
+				}
+				else{
+					console.log("es una ciudad")
+					if(tags[j]=== 25){
+						city = 'Villajoyosa';
+					}
+					else if(tags[j]=== 24){
+						city = 'Sevilla';
+					}
+					else if(tags[j]=== 16){
+						city = 'Barcelona';
+					}
+					else if(tags[j]=== 23){
+						city = 'Tromsø';
+					}
+					else if(tags[j]=== 22){
+						city = 'Trondheim';
+					}
+					else if(tags[j]=== 21){
+						city = 'Oslo';
+					}
+					else if(tags[j]=== 19){
+						city = 'Madrid';
+					}
+					else if(tags[j]=== 18){
+						city = 'Buenos Aires';
+					}
+					else if(tags[j]=== 17) {
+						city = 'Patagonia';
+					}
+					else{
+						city = 'City without register';
+					}
+				}
 			}
-			if(tags[1] === 9){
-				nameTag2 = 'Benidorm';
-			}
-			else if(tags[1] === 13){
-				nameTag2 = 'Iguazu';
-			}
-			else if(tags[1] === 15){
-				nameTag2 = 'Mar del Plata';
-			}
-			for (let j = 0; j < tags.length; j++) {
-				// if(j===0){
-				// 	getCoverImg = imagenes[j].src
-				// 	console.log(getCoverImg)
-				// }	
-				// console.log(tags)		
-			}		
-
-			if(jsonResults[i].tag === undefined){
-				console.log("argentina");
-			}
-
 			lastPost.innerHTML += `
 			<h3 class="last-post__title">Last post</h3>
+			<a href="blog_details.html?id=${jsonResults[i].id}" class="post__link">
 			<article class="post__card--main">
 				<img src="${jsonResults[i].better_featured_image.source_url}" alt="" class="post__img">
 				<div class="post__tags">
-					<h4 class="post__tag">${nameTag}</h4>
-					<h4 class="post__tag">${nameTag2}</h4>
+					<h4 class="post__tag">${country}</h4>
+					<h4 class="post__tag">${city}</h4>
 				</div>                
-				<h4 class="post__title">${nameTag2}!!!... A place you will never forget!!!</h4>
+				<h4 class="post__title">${city}!!!... A place you will never forget!!!</h4>
 				<p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente deleniti modi, facere nam eveniet delectus ad aliquam quasi quia consectetur rem maxime qui laudantium odit animi. Saepe blanditiis doloribus inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente deleniti modi, facere nam eveniet delectus ad aliquam quasi quia consectetur rem maxime qui laudantium odit animi. Saepe blanditiis doloribus inventore.</p>                
 				<a href="blog_details.html?id=${jsonResults[i].id}" class="post__readMore">read more</a>
 				<div class="line"></div>
@@ -59,47 +85,77 @@ async function getDestinations() {
 				</div>
 			</article>
 			<div class="line"></div>
+			</a>
 			`;
 		}
 		for(let i=1; i < jsonResults.length; i++){
 			let tags = jsonResults[i].tags;
+			let country = '';
+			let city='';
+			// console.log(tags[0]);
+			// console.log(tags[1]);
 			
-			if(tags[0] === 10){
-				nameTag = 'Spain';
-			}			
-			else if(tags[0] === 12){
-				nameTag = 'Argentina';
+			for(let j = 0; j < tags.length; j++){
+				console.log(tags[j])
+				if(tags[j] === 8 || tags[j] === 20 || tags[j]=== 12){
+					console.log("es pais")
+					if(tags[j]=== 8){
+						country = 'Spain';
+					}
+					else if(tags[j]=== 20){
+						country = 'Norway';
+					}
+					else{
+						country = 'Argentina';
+					}
+				}
+				else{
+					console.log("es una ciudad")
+					if(tags[j]=== 25){
+						city = 'Villajoyosa';
+					}
+					else if(tags[j]=== 24){
+						city = 'Sevilla';
+					}
+					else if(tags[j]=== 16){
+						city = 'Barcelona';
+					}
+					else if(tags[j]=== 23){
+						city = 'Tromsø';
+					}
+					else if(tags[j]=== 22){
+						city = 'Trondheim';
+					}
+					else if(tags[j]=== 21){
+						city = 'Oslo';
+					}
+					else if(tags[j]=== 19){
+						city = 'Madrid';
+					}
+					else if(tags[j]=== 18){
+						city = 'Buenos Aires';
+					}
+					else if(tags[j]=== 17) {
+						city = 'Patagonia';
+					}
+					else if(tags[j]=== 15){
+						city = 'Mar del Plata';
+					}
+					else{
+						city = 'City without register';
+					}
+				}
 			}
-			if(tags[1] === 9){
-				nameTag2 = 'Benidorm';
-			}
-			else if(tags[1] === 13){
-				nameTag2 = 'Iguazu';
-			}
-			else if(tags[1] === 15){
-				nameTag2 = 'Mar del Plata';
-			}
-			
-			for (let j = 0; j < tags.length; j++) {
-				// if(j===0){
-				// 	getCoverImg = imagenes[j].src
-				// 	console.log(getCoverImg)
-				// }	
-				// console.log(tags)		
-			}		
 
-			if(jsonResults[i].tags === undefined){
-				console.log("argentina");
-			}
-
-			allPost.innerHTML += `			
+			allPost.innerHTML += `
+			<a href="blog_details.html?id=${jsonResults[i].id}" class="post__link">			
 				<article class="post__card--mini">
 					<img src="${jsonResults[i].better_featured_image.source_url}" alt="" class="post__img post__img--mini">
 					<div class="post__tags post__tags--mini">
-						<h4 class="post__tag">${nameTag}</h4>
-						<h4 class="post__tag">${nameTag2}</h4>
+						<h4 class="post__tag">${country}</h4>
+						<h4 class="post__tag">${city}</h4>
 					</div>                
-					<h4 class="post__title post__title--mini">${nameTag2}!!!... A place you will never forget!!!</h4>
+					<h4 class="post__title post__title--mini">${city}!!!... A place you will never forget!!!</h4>
 					<p class="post__desc post__desc--mini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente deleniti modi, facere nam eveniet delectus ad aliquam quasi quia consectetur rem maxime qui laudantium odit animi. Saepe blanditiis doloribus inventore. </p>                
 					<a href="blog_details.html?id=${jsonResults[i].id}" class="post__readMore post__readMore--mini">read more</a>
 					<div class="line"></div>
@@ -109,7 +165,7 @@ async function getDestinations() {
 						<span class="info__comments">200 comments</span>	
 					</div>
 				</article>			
-			
+			</a>
 			`;
 		}
 	}catch{

@@ -29,27 +29,34 @@ async function getId(id){
 
        const openImg = document.querySelector('.gallery__cover');       
        const modalContainer = document.querySelector('.modal__container');
-       let targetImg =''
+    
 
        openImg.onclick = function(e){
            e.preventDefault();
            console.log(e.target)
             modalContainer.classList.remove('hide');
+            
             targetImg = e.target.getAttribute("src");
+            targetAlt = e.target.getAttribute("alt")
             console.log (targetImg);
 
             modalContainer.innerHTML = `
-            <div class="modal__windows">
+            <div class="modal__windows">            
+                <i class="fas fa-times modal__close"></i>           
                 <img class="modal__img" src="${targetImg}" />
+                <h2 class="modal__h2">${jsonResults.title.rendered}</h2>
             </div>
         `;
+        let modalClose = document.querySelector('.modal__close');
+      
+        modalClose.onclick = function(e){
+            console.log(modalClose);
+         modalContainer.classList.add('hide');      
+       
+        }
        }
-       modalContainer.onclick = function(e){
-        e.preventDefault();
-        console.log(e.target)
-         modalContainer.classList.add('hide');
-        
-    }
+       
+       
         
       
     }catch(error){
@@ -57,7 +64,7 @@ async function getId(id){
 		// 	'An error occured. We are working to fix it as soon as possible',
 		// 	'danger'
 		// );
-        alert("hola ")
+        console.log(error)
 
     }finally{
 
