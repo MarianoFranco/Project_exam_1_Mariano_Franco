@@ -1,3 +1,4 @@
+
 function carrusel(){
 	$('.multiple-items').slick({
 		infinite: true,
@@ -52,21 +53,7 @@ async function getDestinations() {
 		
 			
 				
-			// if(element.tags[0] === 10){
-			// 	nameTag = 'Spain';
-			// }			
-			// else if(tags[0] === 12){
-			// 	nameTag = 'Argentina';
-			// }
-			// if(tags[1] === 9){
-			// 	nameTag2 = 'Benidorm';
-			// }
-			// else if(tags[1] === 13){
-			// 	nameTag2 = 'Iguazu';
-			// }
-			// else if(tags[1] === 15){
-			// 	nameTag2 = 'Mar del Plata';
-			// }
+		
 				ruleteContainer.innerHTML += `
 				<div class="latest-post__card">
 				<a href="blog_details.html?id=${jsonResults[i].id}" class="latest-post__link">
