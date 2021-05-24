@@ -19,11 +19,10 @@ main {
   position: relative;
 }
 
-.portrait::before {
-  content: "";
+.portrait__overlay {
   background-color: black;
   width: 100%;
-  height: 752px;
+  height: 100%;
   opacity: 0.8;
   position: absolute;
   top: 0;
@@ -93,9 +92,11 @@ main {
   display: flex;
 }
 .myExperience__img {
-  height: 340px;
-  width: 543px;
-  padding: 50px;
+  max-width: 400px;
+  max-height: 400px;
+  padding: 30px 20px;
+  object-fit: cover;
+  object-position: center center;
 }
 .myExperience__allWeeks {
   padding: 20px;
@@ -224,4 +225,81 @@ main {
   margin: 21px 0;
   color: black;
   font-size: 2.2rem;
+}
+@media (max-width: 1200px) {
+  .portrait__img {
+    max-width: 385px;
+    max-height: 425px;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 250px;
+    left: 750px;
+    border: solid 1px #fc6161;
+    border-radius: 10px 0 10px 0;
+  }
+}
+@media (max-width: 991px) {
+  .portrait {
+    grid-area: portrait;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 115%;
+    height: 752px;
+    position: relative;
+  }
+  .portrait__img {
+    display: none;
+  }
+  .portrait__title {
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    width: 540px;
+    font-family: "Love Ya Like A Sister";
+  }
+  .portrait__h2 {
+    position: absolute;
+    top: 430px;
+    left: 100px;
+    width: 800px;
+    font-weight: normal;
+  }
+}
+@media (max-width: 767px) {
+  .portrait {
+    grid-area: portrait;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 123%;
+    height: 510px;
+    position: relative;
+  }
+  .portrait__title {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 540px;
+    font-family: "Love Ya Like A Sister";
+  }
+  .portrait__h2 {
+    position: absolute;
+    top: 255px;
+    left: 100px;
+    max-width: 550px;
+    font-weight: normal;
+  }
+  .myExperience__cover {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  .myExperience__img {
+    max-width: 400px;
+    max-height: 350px;
+    padding: 30px 20px;
+    object-fit: cover;
+    object-position: center center;
+  }
 }
