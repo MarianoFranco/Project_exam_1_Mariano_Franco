@@ -123,6 +123,18 @@ nav {
     position: relative;
     left: 50px;
   }
+  .searchBar__icon {
+    color: white;
+    height: 25px;
+    width: 25px;
+    font-size: 25px;
+  }
+  .searchBar__line {
+    height: 2px;
+    width: 180px;
+    background: white;
+    margin-top: 5px;
+  }
   .searchBar__input {
     border: none;
     max-width: 140px;
@@ -172,9 +184,9 @@ nav {
     display: block;
   } */
 
-  /* nav {
+  nav {
     display: none;
-  } */
+  }
   .nav__ul {
     border: solid 2px #fc6161;
     position: fixed;

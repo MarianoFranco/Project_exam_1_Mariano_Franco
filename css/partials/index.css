@@ -312,18 +312,6 @@ main {
       "destinations";
   }
 
-  .searchBar__icon {
-    color: white;
-    height: 25px;
-    width: 25px;
-    font-size: 25px;
-  }
-  .searchBar__line {
-    height: 2px;
-    width: 180px;
-    background: white;
-    margin-top: 5px;
-  }
   .portrait {
     background-image: url("../../img/background1.jpg");
     background-repeat: no-repeat;

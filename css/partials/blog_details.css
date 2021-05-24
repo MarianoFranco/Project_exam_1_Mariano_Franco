@@ -91,9 +91,13 @@ main {
   margin: auto;
   display: flex;
 }
-.myExperience__img {
+.myExperience__imgContainer {
   max-width: 400px;
   max-height: 400px;
+}
+.myExperience__img {
+  width: 100%;
+  height: 100%;
   padding: 30px 20px;
   object-fit: cover;
   object-position: center center;
@@ -272,19 +276,19 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 123%;
-    height: 510px;
+    height: 600px;
     position: relative;
   }
   .portrait__title {
     position: absolute;
-    top: 100px;
+    top: 125px;
     left: 100px;
     width: 540px;
     font-family: "Love Ya Like A Sister";
   }
   .portrait__h2 {
     position: absolute;
-    top: 255px;
+    top: 280px;
     left: 100px;
     max-width: 550px;
     font-weight: normal;
@@ -293,7 +297,8 @@ main {
     width: 90%;
     margin: auto;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   .myExperience__img {
     max-width: 400px;
