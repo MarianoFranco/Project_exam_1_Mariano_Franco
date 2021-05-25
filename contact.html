@@ -5,6 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="This is my travel blog website project">
+	<!-- Hotjar Tracking Code for https://nomadatravelblog.netlify.app/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2419311,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/partials/contact.css">
 	<script src="https://kit.fontawesome.com/4a5f897340.js" crossorigin="anonymous"></script>
@@ -43,9 +54,9 @@
 	<main>
 		<section class="portrait">
 			<div class="portrait__overlay"></div>
-			<h1 class="portrait__title">Argentina, <br>Iguazú</h1>
-			<h2 class="portrait__h2">The Iguazu Falls is one of the most visited natural attractions in South America. Today I want to give you my recommendations to organize your trip to the Iguazu Falls on the Argentine side.</h2>
-			<img src="img/contact.jpg" alt="cataratas" class="portrait__img">
+			<h1 class="portrait__title">Contact me</h1>
+			<h2 class="portrait__h2">Feel free to contact me whenever you want to ask your questions, share something with me or send me a suggestion. I will be happy to read your questions and suggestions</h2>
+			<img src="img/contact.jpg" alt="world map" class="portrait__img">
 		</section>
 		<section class="contact">
 			<h3>Contact</h3>
@@ -53,23 +64,27 @@
 			<div class="contact__cover">
 				<form action="">
 					<div class="contact__textCover">
-						<label for="" class="contact__label">Name:</label>
-						<input type="text" class="contact__input">
+						<label for="name" class="contact__label">Name:</label>
+						<input type="text" class="contact__input" id="name">
+						<p class="error nameError">The name should be more than 5 characters long</p>
 					</div>
 					<div class="contact__textCover">
-						<label for="" class="contact__label">Email: </label>
-						<input type="text" class="contact__input">
+						<label for="email" class="contact__label">Email: </label>
+						<input type="text" class="contact__input" id="email">
+						<p class="error emailError">The name should be more than 5 characters long</p>
 					</div>
 					<div class="contact__textCover">
-						<label for="" class="contact__label">Subject: </label>
-						<input type="text" class="contact__input">
+						<label for="subject" class="contact__label" >Subject: </label>
+						<input type="text" class="contact__input" id="subject" name="subject">
+						<p class="error subjectError">The name should be more than 5 characters long</p>
 					</div>
 					<div class="contact__textCover">
-						<label for="" class="contact__label">Comment: </label>
-						<textarea class="contact__textarea"></textarea>
+						<label for="message" class="contact__label">Comment: </label>
+						<p class="error messageError">The name should be more than 5 characters long</p>
+						<textarea class="contact__textarea" id="message"></textarea>
 					</div>
 					<div class="contact__textCover">
-						<input type="submit" class="contact__btn">
+						<input type="submit" class="contact__btn" id="submit">
 					</div>
 				</form>
 			</div>
@@ -121,5 +136,7 @@
 			<p>Pictures are for personal and non commercial use.</p>
 		</div>
 	</footer>
+	<script src="js/contact.js"></script>
+	<script src="js/header.js"></script>
 </body>
 </html>
