@@ -2,11 +2,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: relative;
+
   z-index: 100;
-  width: 100%;
+  max-width: 1440px;
 }
+
 .logo {
+  grid-area: logo;
   padding: 10px;
   align-self: center;
   position: relative;
@@ -28,9 +31,8 @@ header {
   bottom: 20px;
 }
 .searchBar {
+  grid-area: searchbar;
   align-self: center;
-  position: relative;
-  left: 100px;
 }
 .searchBar__dataContainer {
   display: flex;
@@ -66,9 +68,8 @@ header {
   background: #fc6161;
   transition: all 0.4s ease;
 }
-.nav__conatiner {
-  position: relative;
-  border: solid 1px white;
+.nav__container {
+  grid-area: menu;
 }
 .menu__icon {
   display: none;
@@ -79,16 +80,21 @@ header {
 
 nav {
   align-self: center;
-  position: relative;
+  /* position: relative; */
+  /* max-width: 322px; */
+  width: 400px;
+  padding-right: 15px;
 }
 .nav__ul {
   display: flex;
+  justify-content: space-between;
 }
 .nav__close {
   display: none;
 }
 .nav__li {
-  min-width: 150px;
+  max-width: 150px;
+  margin: 10px;
   list-style: none;
   text-align: center;
 }
