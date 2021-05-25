@@ -89,4 +89,27 @@ p {
     margin: 40px 70px;
     text-align: center;
   }
+
+  footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas:
+      "logo social"
+      "links links"
+      "rights rights";
+    width: 100%;
+  }
+  .logo {
+    grid-area: logo;
+  }
+  .links {
+    grid-area: links;
+  }
+  .social {
+    grid-area: social;
+  }
+  .rights {
+    grid-area: rights;
+  }
 }
