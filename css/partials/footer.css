@@ -52,7 +52,7 @@ footer {
   margin: 20px auto;
 }
 @media (max-width: 767px) {
-  .logo {
+  .logo__container {
     padding: 10px;
     align-self: center;
     position: none;

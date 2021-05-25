@@ -18,6 +18,7 @@ body {
     "footer";
   max-width: 1440px;
   margin: auto;
+  position: relative;
 }
 
 header {
@@ -98,7 +99,6 @@ p {
       "logo social"
       "links links"
       "rights rights";
-    width: 100%;
   }
   .logo {
     grid-area: logo;

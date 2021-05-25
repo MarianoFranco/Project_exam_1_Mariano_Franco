@@ -4,14 +4,13 @@ header {
   position: absolute;
   z-index: 100;
   max-width: 1440px;
+  justify-content: space-around;
 }
 
 .logo {
   grid-area: logo;
   padding: 10px;
   align-self: center;
-  position: absolute;
-  left: 20px;
   width: 182px;
   height: 81px;
 }
@@ -68,6 +67,7 @@ header {
 }
 .nav__container {
   grid-area: menu;
+  width: 400px;
 }
 .menu__icon {
   display: none;
@@ -80,7 +80,7 @@ nav {
   align-self: center;
   /* position: relative; */
   /* max-width: 322px; */
-  width: 400px;
+
   padding-right: 15px;
 }
 .nav__ul {
@@ -124,8 +124,6 @@ nav {
 @media (max-width: 991px) {
   .searchBar {
     align-self: center;
-    position: relative;
-    left: 50px;
   }
   .searchBar__icon {
     color: white;
@@ -145,10 +143,82 @@ nav {
     font-size: 2rem;
     background: none;
   }
+  nav {
+    padding: 0;
+    width: 100%;
+  }
+  /* .nav__container {
+    position: absolute;
+    right: 5px;
+    left: 505px;
+  }
 
   .nav__li {
     min-width: 110px;
     list-style: none;
+    text-align: center;
+  } */
+  .nav__container {
+    padding: 10px;
+    width: 30px;
+  }
+  .menu__icon {
+    color: white;
+    display: block;
+    font-size: 4rem;
+    text-align: center;
+  }
+  /* .menu__checkbox:checked ~ nav {
+    display: block;
+  } */
+
+  nav {
+    display: none;
+  }
+  .nav__ul {
+    border: solid 2px #fc6161;
+    position: fixed;
+    width: 230px;
+    height: 250px;
+    right: 26px;
+    top: 106px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px 0 10px 0;
+    /* padding: 79px; */
+    /* vertical-align: 3px; */
+    margin: auo;
+    /* padding: 10px; */
+    justify-content: space-evenly;
+    /* margin: 0; */
+  }
+  .nav__li {
+    min-width: 100px;
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+  }
+  .nav__close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 3.3rem;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    left: 195px;
+    top: 0;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .nav__closeIcon {
     text-align: center;
   }
 }
@@ -157,8 +227,6 @@ nav {
   .logo {
     padding: 10px;
     align-self: center;
-    position: absolute;
-    left: 5px;
     width: 130px;
     height: 60px;
   }
@@ -177,8 +245,6 @@ nav {
   }
   .searchBar {
     align-self: center;
-    position: absolute;
-    left: 50%;
   }
   .searchBar__input {
     border: none;
@@ -193,10 +259,8 @@ nav {
     margin-top: 5px;
   }
   .nav__container {
-    position: absolute;
     padding: 10px;
     width: 30px;
-    right: 0;
   }
   .menu__icon {
     color: white;
