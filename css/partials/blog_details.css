@@ -347,7 +347,7 @@ main {
   }
   .portrait__h2 {
     position: absolute;
-    top: 280px;
+    top: 250px;
     left: 40px;
     max-width: 550px;
     font-weight: normal;
