@@ -90,6 +90,11 @@ p {
     margin: 40px 70px;
     text-align: center;
   }
+  h4 {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
 
   footer {
     grid-area: footer;

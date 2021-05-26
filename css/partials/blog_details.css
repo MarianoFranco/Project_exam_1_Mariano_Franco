@@ -13,7 +13,7 @@ main {
   grid-area: portrait;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 110%;
   height: 752px;
   position: relative;
 }
@@ -31,24 +31,24 @@ main {
   position: absolute;
   top: 195px;
   left: 161px;
-  width: 540px;
+  max-width: 540px;
   font-family: "Love Ya Like A Sister";
 }
 .portrait__h2 {
   position: absolute;
   top: 385px;
   left: 161px;
-  width: 540px;
+  max-width: 540px;
   font-weight: normal;
 }
 .portrait__img {
-  max-width: 582px;
+  max-width: 450px;
   max-height: 425px;
   object-fit: cover;
   object-position: center center;
   position: absolute;
   top: 250px;
-  left: 750px;
+  right: 40px;
   border: solid 1px #fc6161;
   border-radius: 10px 0 10px 0;
 }
@@ -119,7 +119,6 @@ main {
   grid-area: gallery;
 }
 .gallery__p {
-  width: 90%;
   margin: 0 70px 20px;
   color: black;
 }
@@ -284,9 +283,23 @@ main {
     object-position: center center;
     position: absolute;
     top: 250px;
-    left: 750px;
+    right: 40px;
     border: solid 1px #fc6161;
     border-radius: 10px 0 10px 0;
+  }
+  .portrait__title {
+    position: absolute;
+    top: 195px;
+    left: 60px;
+    max-width: 540px;
+    font-family: "Love Ya Like A Sister";
+  }
+  .portrait__h2 {
+    position: absolute;
+    top: 385px;
+    left: 60px;
+    max-width: 540px;
+    font-weight: normal;
   }
 }
 @media (max-width: 991px) {
@@ -294,8 +307,8 @@ main {
     grid-area: portrait;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 115%;
-    height: 700px;
+    background-size: 130%;
+    height: 655px;
     position: relative;
   }
   .portrait__img {
@@ -305,14 +318,14 @@ main {
     position: absolute;
     top: 240px;
     left: 100px;
-    width: 540px;
+    max-width: 540px;
     font-family: "Love Ya Like A Sister";
   }
   .portrait__h2 {
     position: absolute;
     top: 430px;
     left: 100px;
-    width: 800px;
+    max-width: 800px;
     font-weight: normal;
   }
 }
@@ -321,23 +334,24 @@ main {
     grid-area: portrait;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 123%;
-    height: 600px;
+    background-size: 250%;
+    height: 510px;
     position: relative;
   }
   .portrait__title {
     position: absolute;
     top: 125px;
-    left: 100px;
-    width: 540px;
+    left: 40px;
+    max-width: 540px;
     font-family: "Love Ya Like A Sister";
   }
   .portrait__h2 {
     position: absolute;
     top: 280px;
-    left: 100px;
+    left: 40px;
     max-width: 550px;
     font-weight: normal;
+    padding: 10px;
   }
   .myExperience__cover {
     width: 90%;
