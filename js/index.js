@@ -22,6 +22,7 @@ function carrusel(){
 				settings: {
 				  slidesToShow: 2,
 				  slidesToScroll: 1,
+				  arrows:true,
 				  infinite: true,
 				  dots: true
 				}
@@ -31,6 +32,7 @@ function carrusel(){
 			  settings: {
 				slidesToShow: 2,
 				slidesToScroll: 1,
+				arrows:false,
 				infinite: true,
 				dots: true
 			  }

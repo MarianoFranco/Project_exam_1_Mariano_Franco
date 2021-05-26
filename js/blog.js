@@ -83,11 +83,13 @@ async function getDestinations() {
 			<h3 class="last-post__title">Last post</h3>
 			<a href="blog_details.html?id=${jsonResults[i].id}" class="post__link">
 			<article class="post__card--main">
-				<img src="${jsonResults[i].better_featured_image.source_url}" alt="" class="post__img">
-				<div class="post__tags">
-					<h4 class="post__tag">${country}</h4>
-					<h4 class="post__tag">${city}</h4>
-				</div>                
+				<div class="post__imgContainer">
+					<img src="${jsonResults[i].better_featured_image.source_url}" alt="" class="post__img">
+					<div class="post__tags">
+						<h4 class="post__tag">${country}</h4>
+						<h4 class="post__tag">${city}</h4>
+					</div> 
+				</div>	               
 				<h4 class="post__title">${city}!!!... A place you will never forget!!!</h4>
 				<p class="post__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente deleniti modi, facere nam eveniet delectus ad aliquam quasi quia consectetur rem maxime qui laudantium odit animi. Saepe blanditiis doloribus inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente deleniti modi, facere nam eveniet delectus ad aliquam quasi quia consectetur rem maxime qui laudantium odit animi. Saepe blanditiis doloribus inventore.</p>                
 				<a href="blog_details.html?id=${jsonResults[i].id}" class="post__readMore">read more</a>

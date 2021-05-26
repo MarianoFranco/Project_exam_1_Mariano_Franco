@@ -29,14 +29,14 @@ main {
   position: absolute;
   top: 195px;
   left: 161px;
-  width: 540px;
+  max-width: 540px;
   font-family: "Love Ya Like A Sister";
 }
 .portrait__h2 {
   position: absolute;
   top: 390px;
   left: 161px;
-  width: 540px;
+  max-width: 540px;
   font-weight: normal;
 }
 .last-post {
@@ -49,16 +49,19 @@ main {
 
 .post__card--main {
   max-width: 1196px;
-  max-height: 906px;
+  max-height: 1006px;
   background: white;
   margin: 20px auto;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
   border-radius: 10px 0 10px 0;
   position: relative;
 }
+.post__imgContainer {
+  position: relative;
+}
 .post__img {
   width: 100%;
-  max-height: 508px;
+  height: 508px;
   object-fit: cover;
   object-position: center center;
   border-radius: 10px 0 10px 0;
@@ -135,9 +138,7 @@ main {
   justify-content: center;
 }
 .post__card--mini {
-  width: 485px;
-  height: 610px;
-
+  max-width: 485px;
   margin: 20px;
   background: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
@@ -195,11 +196,21 @@ main {
 .get-more__text {
   font-size: 2.4rem;
 }
+@media (max-width: 1200px) {
+  .portrait {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130%;
+    height: 655px;
+    /* top: 0; */
+    position: relative;
+  }
+}
 @media (max-width: 991px) {
   .portrait {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 110%;
+    background-size: 140%;
     height: 655px;
     /* top: 0; */
     position: relative;
@@ -208,19 +219,18 @@ main {
     position: absolute;
     top: 195px;
     left: 161px;
-    width: 540px;
+    max-width: 540px;
     font-family: "Love Ya Like A Sister";
   }
   .portrait__h2 {
     position: absolute;
     top: 380px;
     left: 161px;
-    width: 540px;
+    max-width: 540px;
     font-weight: normal;
   }
   .post__card--mini {
-    width: 450px;
-    height: 610px;
+    max-width: 450px;
     margin: 20px;
     background: white;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 70%);
@@ -232,7 +242,7 @@ main {
   .portrait {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 123%;
+    background-size: 240%;
     height: 510px;
     position: relative;
   }
@@ -240,14 +250,31 @@ main {
     position: absolute;
     top: 150px;
     left: 55px;
-    width: 540px;
+    max-width: 540px;
     font-family: "Love Ya Like A Sister";
   }
   .portrait__h2 {
     position: absolute;
     top: 320px;
     left: 35px;
-    width: 540px;
+    max-width: 540px;
     font-weight: normal;
+  }
+  .post__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px 0 10px 0;
+  }
+  .post__tags {
+    position: absolute;
+    top: 228px;
+    left: 20px;
+    display: flex;
+  }
+  .info__container {
+    padding: 10px;
+    text-align: center;
   }
 }

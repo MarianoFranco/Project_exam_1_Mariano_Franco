@@ -59,7 +59,7 @@ main {
   margin: auto;
 }
 .latest-post__roulette {
-  width: 1200px;
+  max-width: 1150px;
   margin: auto;
 }
 .latest-post__back,
@@ -257,7 +257,7 @@ main {
   margin: 20px auto;
 }
 .destinations-countries__card {
-  width: 410px;
+  max-width: 410px;
   height: 300px;
   position: relative;
   border-radius: 10px 0 10px 0;
@@ -295,7 +295,23 @@ main {
   /*Desktop*/
 
   .latest-post__roulette {
-    width: 950px;
+    max-width: 950px;
+  }
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "portrait"
+      "latest"
+      "top"
+      "about"
+      "destinations";
+  }
+  .about {
+    max-width: 90%;
+    margin: 50px auto 20px;
+    border: solid 1px black;
   }
 }
 /* Tablet */
@@ -340,7 +356,7 @@ main {
     margin: auto;
   }
   .latest-post__roulette {
-    width: 650px;
+    max-width: 750px;
     margin: auto;
   }
   .arrow--left {
@@ -410,6 +426,7 @@ main {
   }
   .latest-post__roulette {
     max-width: 350px;
+
     margin: auto;
   }
   .top-destinations {
@@ -460,7 +477,7 @@ main {
     height: 180px;
   }
   .destinations-countries__card {
-    width: 325px;
+    max-width: 325px;
     height: 100%;
     position: relative;
     border-radius: 10px 0 10px 0;
