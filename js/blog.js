@@ -298,9 +298,9 @@ async function getDestinations() {
 
 		function addDestinations (destinationsCards){	
 			
-			// lastPost.innerHTML ='';
+			lastPost.innerHTML ='';
 			allPost.innerHTML = '';    
-			// readMore.innerHTML= '';
+			readMore.innerHTML= '';
 	
 			destinationsCards.forEach(element => {
 				let tags = element.tags;
@@ -394,8 +394,7 @@ async function getDestinations() {
 		searchBtn.onclick = function(){
 			const filteredCards = jsonResults.filter(checkValue);
 			
-
-				addDestinations(filteredCards);
+			addDestinations(filteredCards);
 			
 		}
 
