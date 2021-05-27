@@ -1,6 +1,14 @@
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "portrait"
+    "about"
+    "gallery";
+}
 .portrait {
   grid-area: portrait;
-  background: url("../../img/contact.jpg");
+  background: url("../../img/sunset.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -41,72 +49,69 @@
   border: solid 1px #fc6161;
   border-radius: 10px 0 10px 0;
 }
-.contact__p {
+.about {
+  grid-area: about;
   width: 80%;
+  margin: auto;
+}
+.about__p {
+  color: black;
   margin: 20px auto;
-  font-size: 2rem;
+}
+.about__imgContainer {
+  max-width: 800px;
+  margin: auto;
+}
+.about__img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.gallery {
+  grid-area: gallery;
+}
+.gallery__p {
+  margin: 0 70px 20px;
   color: black;
 }
-.contact__cover {
+.gallery__cover {
+  display: grid;
+  grid-template-areas:
+    "photo1 photo2 photo3"
+    "photo1 photo4 photo4";
+  grid-gap: 2rem;
   width: 80%;
-  margin: 30px auto;
-  border: solid 1px black;
-  padding: 20px;
-  background: #505943;
-  border-radius: 10px 0 10px 0;
+  margin: 50px auto;
 }
-.contact__textCover {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
+.photo1 {
+  grid-area: photo1;
 }
-.contact__label {
-  font-size: 2rem;
-  color: white;
+.photo2 {
+  grid-area: photo2;
+  max-height: 317px;
 }
-.contact__input {
-  max-width: 600px;
-  height: 30px;
-  margin: 5px 0;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-  font-size: 2rem;
+.photo3 {
+  grid-area: photo3;
+  max-height: 317px;
 }
-.contact__textarea {
-  height: 170px;
-  border-radius: 5px;
-  margin: 10px 0;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-  font-size: 2rem;
-  padding: 10px;
+.photo4 {
+  grid-area: photo4;
+  max-height: 289px;
 }
-.contact__btn {
-  padding: 5px 30px;
-  align-self: center;
-  background: #fc6161;
-  border: solid 2px white;
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 2.2rem;
-  color: white;
+.photo1:hover,
+.photo2:hover,
+.photo3:hover,
+.photo4:hover {
+  transform: scale(1.03);
+  transition: all 0.4s ease-in-out;
 }
-.error {
-  color: #fc6161;
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
 
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 2rem;
-  margin: 5px 0;
-  display: none;
-  max-width: 600px;
-}
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
 @media (max-width: 1200px) {
   .portrait__img {
     max-width: 385px;
@@ -163,7 +168,6 @@
 }
 @media (max-width: 767px) {
   .portrait {
-    grid-area: portrait;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200%;

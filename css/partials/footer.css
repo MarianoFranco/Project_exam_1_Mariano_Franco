@@ -20,6 +20,7 @@ footer {
 .links__li {
   list-style: none;
 }
+
 .links__title {
   text-decoration: underline;
   margin: 10px 0;
@@ -30,6 +31,28 @@ footer {
   text-decoration: none;
   color: white;
   vertical-align: 10px;
+  position: relative;
+}
+.links__a:hover {
+  color: #fc6161;
+  transition: ease-in-out 0.2s all;
+}
+.links__a::before {
+  content: "";
+  height: 2px;
+  width: 0;
+
+  position: absolute;
+  top: 24px;
+}
+.links__a:hover::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #fc6161;
+  position: absolute;
+  top: 24px;
+  transition: ease-in-out 0.2s all;
 }
 .social {
   display: flex;

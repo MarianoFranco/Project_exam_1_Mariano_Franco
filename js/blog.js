@@ -12,8 +12,7 @@ async function getDestinations() {
 
 		console.log(jsonResults);
 		console.log(jsonResults2);
-		let nameTag= '';
-		let nameTag2= '';
+		
 		//last post
 		for(let i=0; i < 1; i++){
 			let tags = jsonResults[i].tags;
@@ -23,9 +22,9 @@ async function getDestinations() {
 			// console.log(tags[1]);
 			
 			for(let j = 0; j < tags.length; j++){
-				console.log(tags[j])
+				
 				if(tags[j] === 8 || tags[j] === 20 || tags[j]=== 12){
-					console.log("es pais")
+					
 					if(tags[j]=== 8){
 						country = 'Spain';
 					}
@@ -37,7 +36,7 @@ async function getDestinations() {
 					}
 				}
 				else{
-					console.log("es una ciudad")
+					
 					if(tags[j]=== 25){
 						city = 'Villajoyosa';
 					}
@@ -113,9 +112,9 @@ async function getDestinations() {
 			// console.log(tags[1]);
 			
 			for(let j = 0; j < tags.length; j++){
-				console.log(tags[j])
+				
 				if(tags[j] === 8 || tags[j] === 20 || tags[j]=== 12){
-					console.log("es pais")
+					
 					if(tags[j]=== 8){
 						country = 'Spain';
 					}
@@ -127,7 +126,7 @@ async function getDestinations() {
 					}
 				}
 				else{
-					console.log("es una ciudad")
+					
 					if(tags[j]=== 25){
 						city = 'Villajoyosa';
 					}
@@ -291,7 +290,7 @@ async function getDestinations() {
 				`;
 			}
 		}
-	}catch{
+	}catch(error){
 		alert("hola blog ")
 
 	}finally{

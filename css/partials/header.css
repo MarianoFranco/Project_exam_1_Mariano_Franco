@@ -29,26 +29,45 @@ header {
 }
 .searchBar {
   grid-area: searchbar;
-  align-self: center;
+  position: relative;
 }
-.searchBar__dataContainer {
-  display: flex;
-  justify-content: space-between;
-}
+
 .searchBar__input {
   border: none;
   max-width: 180px;
   font-size: 2rem;
   background: none;
+  padding: 5px;
+  margin: 5px;
+  color: white;
 }
+
 .searchBar__btn {
   background: none;
   border: none;
+  padding: 5px;
+}
+.searchBar__btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+}
+.searchBar__btn:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #fc6161;
+  transition: all 0.4s ease;
 }
 .searchBar__icon {
   color: white;
-  height: 30px;
-  width: 30px;
   font-size: 30px;
 }
 .searchBar__icon:hover {
@@ -57,9 +76,8 @@ header {
 }
 .searchBar__line {
   height: 2px;
-  width: 235px;
+  width: 100%;
   background: white;
-  margin-top: 5px;
 }
 .searchBar__line:hover {
   background: #fc6161;
@@ -131,12 +149,7 @@ nav {
     width: 25px;
     font-size: 25px;
   }
-  .searchBar__line {
-    height: 2px;
-    width: 180px;
-    background: white;
-    margin-top: 5px;
-  }
+
   .searchBar__input {
     border: none;
     max-width: 140px;
@@ -252,12 +265,7 @@ nav {
     font-size: 2rem;
     background: none;
   }
-  .searchBar__line {
-    height: 2px;
-    width: 110px;
-    background: white;
-    margin-top: 5px;
-  }
+
   .nav__container {
     padding: 10px;
     width: 30px;

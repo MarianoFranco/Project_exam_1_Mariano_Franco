@@ -240,6 +240,8 @@ main {
   display: block;
   margin: 20px auto;
   border-radius: 10px 0 10px 0;
+  object-fit: cover;
+  object-position: bottom center;
 }
 .about__text {
   padding: 10px 20px;
