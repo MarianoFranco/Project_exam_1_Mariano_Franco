@@ -60,14 +60,16 @@ async function getId(id){
         
       
     }catch(error){
-		// document.querySelector('.alert').innerHTML = showAlertTouser(
-		// 	'An error occured. We are working to fix it as soon as possible',
-		// 	'danger'
-		// );
+		document.querySelector('.alert').innerHTML = showAlertTouser(
+			'An error occured. We are working to fix it as soon as possible',
+			'danger'
+		);
         console.log(error)
 
     }finally{
-
+        setTimeout(function () {
+			document.querySelector('.alert').innerHTML = '';
+		}, 4000);
     }
 }
 

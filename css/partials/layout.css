@@ -66,6 +66,23 @@ h4 {
 p {
   font-size: 1.8rem;
 }
+.danger {
+  background-color: #fc6161;
+  padding: 10px;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: black;
+  font-size: 3rem;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  z-index: 50;
+}
 
 @media (max-width: 767px) {
   main {

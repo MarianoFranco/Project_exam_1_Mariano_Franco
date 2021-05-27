@@ -291,10 +291,15 @@ async function getDestinations() {
 			}
 		}
 	}catch(error){
-		alert("hola blog ")
+		document.querySelector('.alert').innerHTML = showAlertTouser(
+			'An error occured. We are working to fix it as soon as possible',
+			'danger'
+		);
 
 	}finally{
-
+		setTimeout(function () {
+			document.querySelector('.alert').innerHTML = '';
+		}, 4000);
 	}
 }
 getDestinations();
