@@ -59,15 +59,15 @@
 			<h3>Contact</h3>
 			<p class="contact__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, delectus quibusdam minus error possimus ut sint quidem. Asperiores temporibus dolorum voluptate, dolores ad repellendus reprehenderit, autem quos animi deleniti tenetur!</p>
 			<div class="contact__cover">
-				<form action="#">
+				<form id="contact__form">
 					<div class="contact__textCover">
 						<label for="name" class="contact__label">Name:</label>
-						<input type="text" class="contact__input" id="name">
+						<input type="text" class="contact__input" id="name" name="name">
 						<p class="error nameError">The name should be more than 5 characters long</p>
 					</div>
 					<div class="contact__textCover">
 						<label for="email" class="contact__label">Email: </label>
-						<input type="text" class="contact__input" id="email">
+						<input type="text" class="contact__input" id="email" name="email">
 						<p class="error emailError">Must be a valid email address </p>
 					</div>
 					<div class="contact__textCover">
@@ -78,7 +78,7 @@
 					<div class="contact__textCover">
 						<label for="message" class="contact__label">Comment: </label>
 						<p class="error messageError">The message content should be more than 25 characters long</p>
-						<textarea class="contact__textarea" id="message"></textarea>
+						<textarea class="contact__textarea" id="message" name="message"></textarea>
 					</div>
 					<div class="contact__textCover">
 						<input type="submit" class="contact__btn" id="submit">

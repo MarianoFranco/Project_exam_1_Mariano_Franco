@@ -1,3 +1,4 @@
+const form = document.querySelector('#contact__form');
 const submit = document.querySelector('#submit');
 const nameError = document.querySelector('.nameError');
 const emailError = document.querySelector('.emailError');
@@ -12,12 +13,20 @@ submit.onclick = function (event) {
 	const email = document.querySelector('#email').value.trim();
 	const subject = document.querySelector('#subject').value.trim();
     const message = document.querySelector('#message').value.trim();
+
+    //Validations
+
+    let nameValidation= true;
+    let emailValidation= true;
+    let subjectValidation= true;
+    let messageValidation= true;
   
    // validate name
 
+
 	if (name.length<6) {
 		nameError.classList.add('show');
-		
+        nameValidation = false;
 	} else {
 		nameError.classList.remove('show');
 	}
@@ -26,7 +35,7 @@ submit.onclick = function (event) {
 
 	if (validateEmail(email) === false) {
 		emailError.classList.add('show');       
-		
+		emailValidation = false;
 	} else {
 		
 		emailError.classList.remove('show');
@@ -43,7 +52,7 @@ submit.onclick = function (event) {
 
     if (subject.length<16) {
 		subjectError.classList.add('show');
-		
+		subjectValidation = false;
 	} else {
 		subjectError.classList.remove('show');
 	}
@@ -52,8 +61,22 @@ submit.onclick = function (event) {
 
     if (message.length<26) {
 		messageError.classList.add('show');
-		
+		messageValidation = false;
 	} else {
 		messageError.classList.remove('show');
 	}
+
+    if (nameValidation && emailValidation && subjectValidation && messageValidation){
+        let data = new FormData(form);
+        console.log(data.get('name'));
+        console.log(data.get('email'));
+        console.log(data.get('subject'));
+        console.log(data.get('message'));
+    }    
+
 };
+
+
+
+
+
