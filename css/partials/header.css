@@ -14,6 +14,9 @@ header {
   width: 182px;
   height: 81px;
 }
+.logo__link {
+  text-decoration: none;
+}
 .logo--title {
   font-size: 5.2rem;
   font-family: "Love Ya Like A Sister", cursive;
