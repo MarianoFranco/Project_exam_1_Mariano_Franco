@@ -1,500 +1,500 @@
 main {
-  grid-area: main;
-  display: grid;
-  grid-template-areas:
-    "portrait portrait"
-    "latest latest"
-    "top about"
-    "destinations destinations";
-  width: 100%;
+	grid-area: main;
+	display: grid;
+	grid-template-areas:
+		"portrait portrait"
+		"latest latest"
+		"top about"
+		"destinations destinations";
+	width: 100%;
 }
 .portrait {
-  grid-area: portrait;
+	grid-area: portrait;
 }
 .latest-post {
-  grid-area: latest;
+	grid-area: latest;
 }
 .top-destinations {
-  grid-area: top;
+	grid-area: top;
 }
 .about {
-  grid-area: about;
+	grid-area: about;
 }
 .destinations-countries {
-  grid-area: destinations;
+	grid-area: destinations;
 }
 .portrait {
-  background-image: url("../../img/background1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  height: 752px;
-  position: relative;
+	background-image: url("../../img/background1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	height: 752px;
+	position: relative;
 }
 .portrait__shadow {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  left: 0;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .portrait__title {
-  position: absolute;
-  top: 195px;
-  left: 161px;
-  width: 540px;
-  font-family: "Love Ya Like A Sister";
+	position: absolute;
+	top: 195px;
+	left: 161px;
+	width: 540px;
+	font-family: "Love Ya Like A Sister";
 }
 .portrait__h2 {
-  position: absolute;
-  top: 390px;
-  left: 161px;
-  width: 540px;
-  font-weight: normal;
+	position: absolute;
+	top: 390px;
+	left: 161px;
+	width: 540px;
+	font-weight: normal;
 }
 .latest-post {
-  width: 90%;
-  margin: auto;
+	width: 90%;
+	margin: auto;
 }
 .latest-post__roulette {
-  max-width: 1150px;
-  margin: auto;
+	max-width: 1150px;
+	margin: auto;
 }
 .latest-post__back,
 .latest-post__next {
-  position: absolute;
-  z-index: 10;
+	position: absolute;
+	z-index: 10;
 }
 .latest-post__back {
-  left: -20px;
+	left: -20px;
 }
 .latest-post__next {
-  right: -20px;
+	right: -20px;
 }
 .arrow {
-  width: 40px;
-  height: 40px;
-  font-size: 40px;
-  align-self: center;
-  color: #fc6161;
-  background: black;
-  border-radius: 50px;
-  align-self: center;
+	width: 40px;
+	height: 40px;
+	font-size: 40px;
+	align-self: center;
+	color: #fc6161;
+	background: black;
+	border-radius: 50px;
+	align-self: center;
 }
 
 .latest-post__card {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-  position: relative;
-  border-radius: 10px 0 10px 0;
+	height: 300px;
+	width: 300px;
+	margin: 10px;
+	position: relative;
+	border-radius: 10px 0 10px 0;
 }
 
 .latest-post--img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  border-radius: 10px 0 10px 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: 10px 0 10px 0;
 }
 
 .latest-post__overlay {
-  background: black;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.6;
-  border-radius: 10px 0 10px 0;
+	background: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+	border-radius: 10px 0 10px 0;
 }
 .latest-post__overlay:hover {
-  opacity: 0.3;
-  transition: 0.3s;
+	opacity: 0.3;
+	transition: 0.3s;
 }
 .latest-post__title {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	text-align: center;
 }
 .info__container {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
 }
 .info__day,
 .info__line,
 .info__comments {
-  font-size: 1.5rem;
-  color: white;
-  margin: 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
+	font-size: 1.5rem;
+	color: white;
+	margin: 5px;
+	font-family: "Roboto", sans-serif;
+	font-weight: lighter;
 }
 .line {
-  background: black;
-  height: 1px;
-  margin-top: 50px;
+	background: black;
+	height: 1px;
+	margin-top: 50px;
 }
 .top-destinations {
-  width: 90%;
-  margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 .top-destinations__main {
-  margin: auto;
+	margin: auto;
 }
 .top-destinations__mainCover {
-  height: 439px;
-  max-width: 899px;
-  border: solid 1px #505943;
-  position: relative;
-  border-radius: 10px 0 10px 0;
-  margin: auto;
+	height: 439px;
+	max-width: 899px;
+	border: solid 1px #505943;
+	position: relative;
+	border-radius: 10px 0 10px 0;
+	margin: auto;
 }
 .top-destinations__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  border-radius: 10px 0 10px 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: 10px 0 10px 0;
 }
 .top-destinations__mainCover:hover,
 .top-destinations__cover:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease;
+	transform: scale(1.05);
+	transition: all 0.5s ease;
 }
 .top-destinations__overlay {
-  height: 169px;
-  width: 100%;
-  top: 270px;
-  background: black;
-  position: absolute;
-  opacity: 0.8;
-  border-radius: 0 0 10px 0;
+	height: 169px;
+	width: 100%;
+	top: 270px;
+	background: black;
+	position: absolute;
+	opacity: 0.8;
+	border-radius: 0 0 10px 0;
 }
 
 .top-destinations__title {
-  padding: 20px 20px 10px;
-  color: #cecbaf;
-  font-weight: bold;
+	padding: 20px 20px 10px;
+	color: #cecbaf;
+	font-weight: bold;
 }
 .top-destinations__title--main {
-  width: 60%;
+	width: 60%;
 }
 .top-destinations__text {
-  color: white;
-  font-weight: lighter;
-  padding: 10px 20px;
+	color: white;
+	font-weight: lighter;
+	padding: 10px 20px;
 }
 .info__container--mainDestination {
-  left: 120px;
-  top: 130px;
+	left: 120px;
+	top: 130px;
 }
 
 .top-destinations__countryName {
-  background-color: #fc6161;
-  top: 0;
-  right: 0;
-  position: absolute;
-  padding: 15px;
-  font-family: "Love Ya Like A Sister", cursive;
+	background-color: #fc6161;
+	top: 0;
+	right: 0;
+	position: absolute;
+	padding: 15px;
+	font-family: "Love Ya Like A Sister", cursive;
 }
 .top-destinations__secondary {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px auto 0;
+	display: flex;
+	justify-content: space-around;
+	margin: 20px auto 0;
 }
 .top-destinations__cover {
-  width: 410px;
-  height: 300px;
-  position: relative;
-  margin: 10px;
+	width: 410px;
+	height: 300px;
+	position: relative;
+	margin: 10px;
 }
 .top-destinations__overlay--secondary {
-  top: 130px;
+	top: 130px;
 }
 .info__container--secDestination {
-  top: 140px;
-  left: 116px;
+	top: 140px;
+	left: 116px;
 }
 .about {
-  max-width: 336px;
-  margin: 50px 5px 0;
-  border: solid 1px black;
+	max-width: 336px;
+	margin: 50px 5px 0;
+	border: solid 1px black;
 }
 .about__title {
-  margin: 20px;
-  text-align: center;
+	margin: 20px;
+	text-align: center;
 }
 .about__img {
-  width: 204px;
-  height: 218px;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px 0 10px 0;
-  object-fit: cover;
-  object-position: bottom center;
+	width: 204px;
+	height: 218px;
+	display: block;
+	margin: 20px auto;
+	border-radius: 10px 0 10px 0;
+	object-fit: cover;
+	object-position: bottom center;
 }
 .about__text {
-  padding: 10px 20px;
-  color: black;
-  font-weight: normal;
-  font-size: 2rem;
+	padding: 10px 20px;
+	color: black;
+	font-weight: normal;
+	font-size: 2rem;
 }
 .destinations-countries {
-  margin: auto;
+	margin: auto;
 }
 .destinations-countries__cardsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px auto;
 }
 .destinations-countries__card {
-  max-width: 410px;
-  height: 300px;
-  position: relative;
-  border-radius: 10px 0 10px 0;
-  margin: 15px;
+	max-width: 410px;
+	height: 300px;
+	position: relative;
+	border-radius: 10px 0 10px 0;
+	margin: 15px;
 }
 .destinations-countries__overlay {
-  width: 410px;
-  height: 300px;
-  position: absolute;
-  background: black;
-  border-radius: 10px 0 10px 0;
-  opacity: 0.8;
+	width: 410px;
+	height: 300px;
+	position: absolute;
+	background: black;
+	border-radius: 10px 0 10px 0;
+	opacity: 0.8;
 }
 .destinations-countries__overlay:hover {
-  opacity: 0.3;
-  transition: all 0.3s ease;
+	opacity: 0.3;
+	transition: all 0.3s ease;
 }
 .destinations-countries__img {
-  width: 100%;
-  border-radius: 10px 0 10px 0;
-  object-fit: cover;
-  object-position: center center;
+	width: 100%;
+	border-radius: 10px 0 10px 0;
+	object-fit: cover;
+	object-position: center center;
 }
 .destinations-countries__title {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: "Love Ya Like A Sister", cursive;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	font-size: 3.6rem;
+	font-family: "Love Ya Like A Sister", cursive;
 }
 .destinations-countries__title:hover {
-  color: #fc6161;
-  transition: all 0.3s ease;
+	color: #fc6161;
+	transition: all 0.3s ease;
 }
 @media (max-width: 1200px) {
-  /*Desktop*/
+	/*Desktop*/
 
-  .latest-post__roulette {
-    max-width: 950px;
-  }
-  main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "portrait"
-      "latest"
-      "top"
-      "about"
-      "destinations";
-  }
-  .about {
-    max-width: 90%;
-    margin: 50px auto 20px;
-    border: solid 1px black;
-  }
+	.latest-post__roulette {
+		max-width: 950px;
+	}
+	main {
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"portrait"
+			"latest"
+			"top"
+			"about"
+			"destinations";
+	}
+	.about {
+		max-width: 90%;
+		margin: 50px auto 20px;
+		border: solid 1px black;
+	}
 }
 /* Tablet */
 @media (max-width: 991px) {
-  main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "portrait"
-      "latest"
-      "top"
-      "about"
-      "destinations";
-  }
+	main {
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"portrait"
+			"latest"
+			"top"
+			"about"
+			"destinations";
+	}
 
-  .portrait {
-    background-image: url("../../img/background1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 130%;
-    height: 655px;
-    /* top: 0; */
-    position: relative;
-  }
-  .portrait__title {
-    position: absolute;
-    top: 195px;
-    left: 161px;
-    width: 540px;
-    font-family: "Love Ya Like A Sister";
-  }
-  .portrait__h2 {
-    position: absolute;
-    top: 380px;
-    left: 161px;
-    width: 540px;
-    font-weight: normal;
-  }
-  .latest-post {
-    width: 100%;
-    margin: auto;
-  }
-  .latest-post__roulette {
-    max-width: 750px;
-    margin: auto;
-  }
-  .arrow--left {
-    position: absolute;
-    left: 20px;
-    z-index: 10;
-  }
-  .arrow--right {
-    position: absolute;
-    left: 1220px;
-  }
-  .top-destinations {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .top-destinations__secondary {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
-  .top-destinations__cover {
-    width: 410px;
-    height: 300px;
-    position: relative;
-    margin: 20px;
-  }
-  .about {
-    max-width: 90%;
-    margin: 50px auto 20px;
-    border: solid 1px black;
-  }
+	.portrait {
+		background-image: url("../../img/background1.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 130%;
+		height: 655px;
+		/* top: 0; */
+		position: relative;
+	}
+	.portrait__title {
+		position: absolute;
+		top: 195px;
+		left: 161px;
+		width: 540px;
+		font-family: "Love Ya Like A Sister";
+	}
+	.portrait__h2 {
+		position: absolute;
+		top: 380px;
+		left: 161px;
+		width: 540px;
+		font-weight: normal;
+	}
+	.latest-post {
+		width: 100%;
+		margin: auto;
+	}
+	.latest-post__roulette {
+		max-width: 750px;
+		margin: auto;
+	}
+	.arrow--left {
+		position: absolute;
+		left: 20px;
+		z-index: 10;
+	}
+	.arrow--right {
+		position: absolute;
+		left: 1220px;
+	}
+	.top-destinations {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.top-destinations__secondary {
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+	}
+	.top-destinations__cover {
+		width: 410px;
+		height: 300px;
+		position: relative;
+		margin: 20px;
+	}
+	.about {
+		max-width: 90%;
+		margin: 50px auto 20px;
+		border: solid 1px black;
+	}
 }
 /* Mobile version */
 @media (max-width: 767px) {
-  main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "portrait"
-      "latest"
-      "top"
-      "about"
-      "destinations";
-  }
-  .portrait {
-    background-image: url("../../img/background1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 215%;
-    height: 510px;
-    position: relative;
-  }
-  .portrait__title {
-    position: absolute;
-    top: 140px;
-    left: 10%;
-    width: 85%;
-    font-family: "Love Ya Like A Sister";
-  }
-  .portrait__h2 {
-    position: absolute;
-    top: 320px;
-    left: 10%;
-    width: 85%;
-    font-weight: normal;
-  }
-  .latest-post__roulette {
-    max-width: 350px;
+	main {
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"portrait"
+			"latest"
+			"top"
+			"about"
+			"destinations";
+	}
+	.portrait {
+		background-image: url("../../img/background1.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 215%;
+		height: 510px;
+		position: relative;
+	}
+	.portrait__title {
+		position: absolute;
+		top: 140px;
+		left: 10%;
+		width: 85%;
+		font-family: "Love Ya Like A Sister";
+	}
+	.portrait__h2 {
+		position: absolute;
+		top: 320px;
+		left: 10%;
+		width: 85%;
+		font-weight: normal;
+	}
+	.latest-post__roulette {
+		max-width: 350px;
 
-    margin: auto;
-  }
-  .top-destinations {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .top-destinations__main {
-    margin: 20px;
-  }
-  .top-destinations__mainCover {
-    height: 439px;
-    width: 100%;
-    border: solid 1px #505943;
-    position: relative;
-    border-radius: 10px 0 10px 0;
-  }
-  .top-destinations__overlay {
-    height: 260px;
-    width: 100%;
-    top: 180px;
-    background: black;
-    position: absolute;
-    opacity: 0.8;
-    border-radius: 0 0 10px 0;
-  }
-  .info__container--mainDestination {
-    left: 120px;
-    top: 220px;
-  }
-  .top-destinations__title--main {
-    width: 87%;
-  }
-  .top-destinations__secondary {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .top-destinations__cover {
-    width: 100%;
-    height: 439px;
-    position: relative;
-    margin: 20px;
-  }
-  .top-destinations__overlay--secondary {
-    top: 260px;
-    height: 180px;
-  }
-  .destinations-countries__card {
-    max-width: 325px;
-    height: 100%;
-    position: relative;
-    border-radius: 10px 0 10px 0;
-    margin: 15px;
-  }
-  .destinations-countries__overlay {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: black;
-    border-radius: 10px 0 10px 0;
-    opacity: 0.8;
-  }
+		margin: auto;
+	}
+	.top-destinations {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.top-destinations__main {
+		margin: 20px;
+	}
+	.top-destinations__mainCover {
+		height: 439px;
+		width: 100%;
+		border: solid 1px #505943;
+		position: relative;
+		border-radius: 10px 0 10px 0;
+	}
+	.top-destinations__overlay {
+		height: 260px;
+		width: 100%;
+		top: 180px;
+		background: black;
+		position: absolute;
+		opacity: 0.8;
+		border-radius: 0 0 10px 0;
+	}
+	.info__container--mainDestination {
+		left: 120px;
+		top: 220px;
+	}
+	.top-destinations__title--main {
+		width: 87%;
+	}
+	.top-destinations__secondary {
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.top-destinations__cover {
+		width: 100%;
+		height: 439px;
+		position: relative;
+		margin: 20px;
+	}
+	.top-destinations__overlay--secondary {
+		top: 260px;
+		height: 180px;
+	}
+	.destinations-countries__card {
+		max-width: 325px;
+		height: 100%;
+		position: relative;
+		border-radius: 10px 0 10px 0;
+		margin: 15px;
+	}
+	.destinations-countries__overlay {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: black;
+		border-radius: 10px 0 10px 0;
+		opacity: 0.8;
+	}
 }
